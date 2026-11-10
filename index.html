@@ -30,7 +30,7 @@ body{margin:0;background:#07090B;color:#E9EFF1;font-family:'Golos Text',system-u
 .h1 em{font-style:normal;color:#C6FF3D}
 @media(max-width:900px){.nav{display:none}.head__tel{display:none}}
 </style>
-<link rel="stylesheet" href="assets/css/style.v1.css">
+<link rel="stylesheet" href="assets/css/style.v2.css">
 </head>
 <body>
 <header class="head"><div class="head__in">
@@ -71,36 +71,47 @@ body{margin:0;background:#07090B;color:#E9EFF1;font-family:'Golos Text',system-u
   <div class="wrap">
     <div class="sec__head">
       <div><p class="kick">Стенд</p><h2 class="h2">Сколько добавит <em>ваша</em> прошивка</h2></div>
-      <p class="sec__note">Выберите мотор и этап — график покажет, как меняется мощность и момент. Цифры ориентировочные: точные значения видны после чтения прошивки и диагностики.</p>
+      <p class="sec__note">Три шага: мотор, объём, этап. График покажет мощность и момент до и после прошивки. Цифры ориентировочные — точные видно после чтения прошивки на машине.</p>
     </div>
-    <div class="dyno">
-      <div class="dyno__chart"><svg id="dynoSvg" viewBox="0 0 720 380" role="img" aria-label="График мощности до и после прошивки"></svg></div>
-      <div class="dyno__panel">
-        <div><span class="grp__lbl">Двигатель</span>
-          <div class="chiprow" id="engines">
-            <button class="chip is-on" type="button" data-engine="na">Бензин, атмо</button>
-            <button class="chip" type="button" data-engine="turbo">Бензин, турбо</button>
-            <button class="chip" type="button" data-engine="diesel">Дизель</button>
-          </div>
+
+    <div class="dyno__ctl">
+      <div class="fld">
+        <p class="fld__l"><b>1</b> Двигатель</p>
+        <div class="seg" id="engines">
+          <button class="seg__b is-on" type="button" data-engine="na">Атмо<small>бензин</small></button>
+          <button class="seg__b" type="button" data-engine="turbo">Турбо<small>бензин</small></button>
+          <button class="seg__b" type="button" data-engine="diesel">Дизель<small>турбо</small></button>
         </div>
-        <div><span class="grp__lbl">Объём, л</span>
-          <input class="rng" id="vol" type="range" min="1.2" max="3" step="0.1" value="2" aria-label="Объём двигателя, литры">
-          <div class="rng__val"><span>1.2</span><span id="volVal">2.0 л</span><span>3.0</span></div>
-        </div>
-        <div><span class="grp__lbl">Этап</span>
-          <div class="chiprow" id="stages">
-            <button class="chip is-on" type="button" data-stage="1">Stage 1</button>
-            <button class="chip" type="button" data-stage="2">Stage 2</button>
-          </div>
-        </div>
-        <div class="dyno__out">
-          <div class="dyno__cell"><span>Было</span><b id="outWas">—<i>л.с.</i></b></div>
-          <div class="dyno__cell dyno__cell--ph"><span>Стало</span><b id="outNow">—<i>л.с.</i></b></div>
-          <div class="dyno__cell dyno__cell--cy"><span>Прибавка</span><b id="outGain">—</b></div>
-        </div>
-        <p class="dyno__hint" id="outHint">—</p>
-        <a class="btn btn--ph" href="https://wa.me/375291515658" target="_blank" rel="noopener">Узнать по моей машине</a>
       </div>
+      <div class="fld">
+        <p class="fld__l"><b>2</b> Объём</p>
+        <input class="rng" id="vol" type="range" min="1.2" max="3" step="0.1" value="2" aria-label="Объём двигателя, литры">
+        <div class="rng__val"><span>1.2</span><b id="volVal">2.0 л</b><span>3.0</span></div>
+      </div>
+      <div class="fld">
+        <p class="fld__l"><b>3</b> Прошивка</p>
+        <div class="seg" id="stages">
+          <button class="seg__b is-on" type="button" data-stage="1">Stage 1<small>штатное железо</small></button>
+          <button class="seg__b" type="button" data-stage="2">Stage 2<small>с доработками</small></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="dyno__chart">
+      <div class="dyno__legend">
+        <span class="lg"><i class="lg__l"></i>Сток</span>
+        <span class="lg"><i class="lg__l lg__l--tuned"></i>После прошивки</span>
+        <span class="lg"><i class="lg__l lg__l--torque"></i>Момент, Нм</span>
+        <span class="dyno__live" id="dynoLive">ведите курсором по графику</span>
+      </div>
+      <svg id="dynoSvg" viewBox="0 0 760 360" role="img" aria-label="График мощности и момента до и после прошивки"></svg>
+    </div>
+
+    <div class="dyno__res">
+      <div class="res__c"><span>Было</span><b id="outWas">—</b><i>л.с.</i></div>
+      <div class="res__c res__c--ph"><span>Станет</span><b id="outNow">—</b><i>л.с.</i></div>
+      <div class="res__c res__c--cy"><span>Прибавка</span><b id="outGain">—</b><i id="outPct">—</i></div>
+      <div class="res__txt"><p id="outNote">—</p><a class="btn btn--ph" href="https://wa.me/375291515658" target="_blank" rel="noopener">Узнать по моей машине</a></div>
     </div>
   </div>
 </section>
@@ -231,5 +242,5 @@ body{margin:0;background:#07090B;color:#E9EFF1;font-family:'Golos Text',system-u
 <a href="viber://chat?number=%2B375291515658">Viber</a>
 <a href="https://t.me/+375291515658" target="_blank" rel="noopener">Telegram</a>
 </nav>
-<script src="assets/js/main.v1.js"></script>
+<script src="assets/js/main.v2.js"></script>
 </body></html>
