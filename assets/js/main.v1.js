@@ -42,8 +42,9 @@
 
   /* ---------- стенд ---------- */
   var svg = document.getElementById('dynoSvg');
-  if (!svg) return;
+  if (svg) initDyno();
 
+  function initDyno() {
   var ENG = {
     na: { hp: function (v) { return 68 * v + 12; }, nm: function (v) { return 92 * v + 12; }, redline: 6200,
           g: { 1: { hp: 0.08, nm: 0.07 }, 2: { hp: 0.12, nm: 0.10 } } },
@@ -168,6 +169,7 @@
   if (vol) vol.addEventListener('input', function () { state.vol = parseFloat(vol.value); render(); });
 
   render();
+  }
 
   /* ---------- сценарии ---------- */
   var SCEN = [
