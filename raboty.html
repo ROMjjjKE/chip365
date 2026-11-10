@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Типовые работы | CHIP365</title>
+<meta name="description" content="Stage 1 на дизеле, AdBlue и счётчик запуска, забитый сажевый, клонирование ЭБУ после залива, привязка нового блока, ошибки EGR.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Golos+Text:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#07090B;color:#E9EFF1;font-family:'Golos Text',system-ui,sans-serif}
+[hidden]{display:none!important}
+.head{position:sticky;top:0;z-index:60;background:rgba(7,9,11,.9);border-bottom:1px solid rgba(233,239,241,.12)}
+.head__in{display:flex;align-items:center;gap:16px;padding:13px 20px;max-width:1280px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:17px;letter-spacing:.02em;text-transform:uppercase;color:#E9EFF1;text-decoration:none}
+.brand i{width:9px;height:9px;background:#C6FF3D;border-radius:2px;display:inline-block}
+.nav{display:flex;gap:18px;margin-left:auto;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:#8B979D}
+.nav a{color:inherit;text-decoration:none}
+.head__tel{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:13px;color:#E9EFF1;text-decoration:none;border-bottom:1px solid #C6FF3D;padding-bottom:3px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 20px;border:1px solid rgba(233,239,241,.2);color:#E9EFF1;text-decoration:none;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:11.5px;letter-spacing:.13em;text-transform:uppercase}
+.btn--ph{background:#C6FF3D;border-color:#C6FF3D;color:#07090B}
+.hero{position:relative;min-height:min(90svh,820px);display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;border-bottom:1px solid rgba(233,239,241,.12)}
+.hero__bg{position:absolute;inset:0}
+.hero__bg img{width:100%;height:100%;object-fit:cover}
+.hero__bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,9,11,.55),rgba(7,9,11,.96))}
+.hero__in{position:relative;padding:96px 0 28px;max-width:1280px;margin:0 auto;padding-inline:20px;width:100%}
+.h1{font-family:'JetBrains Mono',monospace;font-weight:800;font-size:clamp(1.8rem,4.6vw,4.4rem);line-height:1.03;text-transform:uppercase;max-width:20ch;margin:0}
+.h1 em{font-style:normal;color:#C6FF3D}
+@media(max-width:900px){.nav{display:none}.head__tel{display:none}}
+</style>
+<link rel="stylesheet" href="assets/css/style.v1.css">
+</head>
+<body>
+<header class="head"><div class="head__in">
+<a class="brand" href="index.html"><i></i>CHIP<span style="color:#C6FF3D">365</span></a>
+<nav class="nav" aria-label="Разделы"><a href="index.html">Главная</a><a href="uslugi.html">Услуги</a><a href="ceny.html">Цены</a><a href="raboty.html" aria-current="page">Работы</a><a href="o-nas.html">О нас</a><a href="kontakty.html">Контакты</a></nav>
+<a class="head__tel" href="tel:+375291515658">+375 (29) 151-56-58</a>
+<button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Меню"><span></span><span></span><span></span></button>
+</div></header>
+
+<section class="phead"><div class="wrap">
+<p class="kick">Работы</p>
+<h1 class="h1">Типовые <em>задачи</em></h1>
+<p class="lead">Ниже — то, с чем приезжают чаще всего. Конкретные цифры по вашему авто считаем после диагностики: одинаковых машин с одинаковым состоянием не бывает.</p>
+</div></section>
+
+<section class="sec"><div class="wrap"><div class="cards">
+  <div class="card"><span class="card__tag">stage 1</span><h3>Дизель 2.0: тяга на низах</h3><p>Машина «не едет» до 2000 оборотов, на трассе приходится топить. Правим топливо и наддув, снимаем провал, проверяем на тест-драйве.</p><span class="card__price">от 300 руб.</span></div>
+  <div class="card"><span class="card__tag">adblue</span><h3>Счётчик запуска на панели</h3><p>Осталось 300 км и предупреждение о блокировке. Отключаем систему программно, убираем ограничение пуска.</p><span class="card__price">от 180 руб.</span></div>
+  <div class="card"><span class="card__tag">dpf</span><h3>Сажевый забит, аварийный режим</h3><p>Регенерация не запускается, мощность падает. Проверяем противодавление, затем программное решение.</p><span class="card__price">от 160 руб.</span></div>
+  <div class="card"><span class="card__tag">clone</span><h3>ЭБУ залит после мойки</h3><p>Блок не выходит на связь. Ищем донора, переносим прошивку и кодировки, машина заводится на своих ключах.</p><span class="card__price">от 150 руб.</span></div>
+  <div class="card"><span class="card__tag">immo</span><h3>Новый блок не привязан</h3><p>После замены блок «чужой», стартер крутит, запуска нет. Привязываем ЭБУ к авто и стираем ошибки.</p><span class="card__price">по авто</span></div>
+  <div class="card"><span class="card__tag">egr</span><h3>Ошибка EGR и вихревых заслонок</h3><p>Клапан забит, заслонки клинят. Отключаем программно и убираем ошибки из структуры прошивки.</p><span class="card__price">от 150 руб.</span></div>
+</div></div></section>
+<section class="cta"><div class="wrap cta__in"><div><h2>Ваш случай не из списка?</h2><p>Напишите марку, год и что происходит — ответим, делаем ли такое и сколько это стоит.</p></div>
+<div class="cta__actions"><a class="btn btn--dark" href="tel:+375291515658">+375 (29) 151-56-58</a><a class="btn" href="https://wa.me/+375291515658" target="_blank" rel="noopener">WhatsApp</a></div></div></section><footer class="foot"><div class="wrap">
+<div class="foot__grid">
+<div><p class="foot__name">CHIP365 · чип-тюнинг и автоэлектроника</p>
+<p class="foot__small">Прошивки Stage 1–2, отключение AdBlue, EGR, DPF и катализатора, клонирование ЭБУ и BSI, IMMO OFF, привязка блоков. Минск, Минск, ул. Будславская, 21, бокс 1050. Работаем без выходных, 10:00–21:00.</p></div>
+<div class="foot__col"><h4>Разделы</h4><a href="uslugi.html">Услуги</a><a href="ceny.html">Цены</a><a href="raboty.html">Работы</a><a href="o-nas.html">О нас</a><a href="kontakty.html">Контакты</a></div>
+<div class="foot__col"><h4>Связь</h4><a href="tel:+375291515658">+375 (29) 151-56-58</a><a href="tel:+375297137225">+375 (29) 713-72-25</a><a href="mailto:info@chip365.by">info@chip365.by</a><a href="https://wa.me/+375291515658" target="_blank" rel="noopener">WhatsApp</a><a href="https://t.me/++375291515658" target="_blank" rel="noopener">Telegram</a><a href="viber://chat?number=%2B+375291515658">Viber</a></div>
+</div>
+<div class="foot__bottom"><span>© 2026 CHIP365 · Минск, ул. Будславская, 21, бокс 1050</span><span>Цены — от, точная сумма после диагностики. <a href="politika.html" style="color:inherit;border-bottom:1px solid currentColor">Политика данных</a></span></div>
+</div></footer>
+<div class="drawer" id="drawer" hidden><div class="drawer__in">
+<button class="drawer__close" type="button" id="drawer-close" aria-label="Закрыть меню">×</button>
+<nav aria-label="Мобильное меню"><a href="index.html">Главная</a><a href="uslugi.html">Услуги</a><a href="ceny.html">Цены</a><a href="raboty.html">Работы</a><a href="o-nas.html">О нас</a><a href="kontakty.html">Контакты</a></nav>
+<div class="drawer__meta"><a href="tel:+375291515658" style="color:inherit">+375 (29) 151-56-58</a><br><a href="tel:+375297137225" style="color:inherit">+375 (29) 713-72-25</a><br>Минск, ул. Будславская, 21, бокс 1050<br>10:00–21:00, без выходных</div>
+</div></div>
+<nav class="mobbar" aria-label="Быстрая связь">
+<a class="mobbar__call" href="tel:+375291515658">Позвонить</a>
+<a href="https://wa.me/+375291515658" target="_blank" rel="noopener">WhatsApp</a>
+<a href="viber://chat?number=%2B+375291515658">Viber</a>
+<a href="https://t.me/++375291515658" target="_blank" rel="noopener">Telegram</a>
+</nav>
+<script src="assets/js/main.v1.js"></script>
+</body></html>

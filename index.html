@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CHIP365 — чип-тюнинг и клонирование ЭБУ в Минске</title>
+<meta name="description" content="Чип-тюнинг Stage 1–2, отключение AdBlue, EGR, DPF и катализатора, клонирование ЭБУ, BSI и панелей приборов, IMMO OFF, привязка блоков. Минск, Будславская 21. Гарантия 1 год.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Golos+Text:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#07090B;color:#E9EFF1;font-family:'Golos Text',system-ui,sans-serif}
+[hidden]{display:none!important}
+.head{position:sticky;top:0;z-index:60;background:rgba(7,9,11,.9);border-bottom:1px solid rgba(233,239,241,.12)}
+.head__in{display:flex;align-items:center;gap:16px;padding:13px 20px;max-width:1280px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;font-family:'JetBrains Mono',monospace;font-weight:800;font-size:17px;letter-spacing:.02em;text-transform:uppercase;color:#E9EFF1;text-decoration:none}
+.brand i{width:9px;height:9px;background:#C6FF3D;border-radius:2px;display:inline-block}
+.nav{display:flex;gap:18px;margin-left:auto;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:#8B979D}
+.nav a{color:inherit;text-decoration:none}
+.head__tel{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:13px;color:#E9EFF1;text-decoration:none;border-bottom:1px solid #C6FF3D;padding-bottom:3px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 20px;border:1px solid rgba(233,239,241,.2);color:#E9EFF1;text-decoration:none;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:11.5px;letter-spacing:.13em;text-transform:uppercase}
+.btn--ph{background:#C6FF3D;border-color:#C6FF3D;color:#07090B}
+.hero{position:relative;min-height:min(90svh,820px);display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;border-bottom:1px solid rgba(233,239,241,.12)}
+.hero__bg{position:absolute;inset:0}
+.hero__bg img{width:100%;height:100%;object-fit:cover}
+.hero__bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,9,11,.55),rgba(7,9,11,.96))}
+.hero__in{position:relative;padding:96px 0 28px;max-width:1280px;margin:0 auto;padding-inline:20px;width:100%}
+.h1{font-family:'JetBrains Mono',monospace;font-weight:800;font-size:clamp(1.8rem,4.6vw,4.4rem);line-height:1.03;text-transform:uppercase;max-width:20ch;margin:0}
+.h1 em{font-style:normal;color:#C6FF3D}
+@media(max-width:900px){.nav{display:none}.head__tel{display:none}}
+</style>
+<link rel="stylesheet" href="assets/css/style.v1.css">
+</head>
+<body>
+<header class="head"><div class="head__in">
+<a class="brand" href="index.html"><i></i>CHIP<span style="color:#C6FF3D">365</span></a>
+<nav class="nav" aria-label="Разделы"><a href="index.html" aria-current="page">Главная</a><a href="uslugi.html">Услуги</a><a href="ceny.html">Цены</a><a href="raboty.html">Работы</a><a href="o-nas.html">О нас</a><a href="kontakty.html">Контакты</a></nav>
+<a class="head__tel" href="tel:+375291515658">+375 (29) 151-56-58</a>
+<button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Меню"><span></span><span></span><span></span></button>
+</div></header>
+
+<section class="hero">
+  <div class="hero__bg"><img src="assets/img/hero.jpg" alt="Автомобиль на стенде, ноутбук с графиком мощности" width="1600" height="940" fetchpriority="high"></div>
+  <div class="hero__in">
+    <p class="kick">Минск · Будславская 21, бокс 1050</p>
+    <h1 class="h1"><span>Чип-тюнинг</span><span>и <em>клонирование</em> ЭБУ</span></h1>
+    <p class="hero__lead">Stage 1–2, AdBlue OFF, EGR OFF, сажевый и катализатор, IMMO OFF, клонирование блоков двигателя, BSI и панелей приборов. Прошивки делаем сами, поэтому за результат отвечаем: расчёт после тест-драйва, когда вы убедились, что машина едет как надо.</p>
+    <div class="hero__cta">
+      <a class="btn btn--ph" href="tel:+375291515658">Записаться · +375 (29) 151-56-58</a>
+      <a class="btn" href="https://wa.me/+375291515658" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn btn--ghost" href="ceny.html">Смотреть цены</a>
+    </div>
+    <div class="hero__meta">
+      <span><b>11+ лет</b> на автоэлектронике</span>
+      <span><b>свои прошивки</b> без посредников</span>
+      <span><b>гарантия 1 год</b> по договору</span>
+      <span><b>10:00–21:00</b> без выходных</span>
+    </div>
+  </div>
+</section>
+
+<div class="facts">
+  <div class="fact"><b>Stage 1–2</b><span>прибавка мощности в безопасных для ресурса пределах</span></div>
+  <div class="fact"><b>AdBlue · EGR · DPF</b><span>программное отключение без «обманок» и скруток</span></div>
+  <div class="fact"><b>Клонирование</b><span>ЭБУ, BSI, панели приборов — когда родной блок вышел из строя</span></div>
+  <div class="fact"><b>IMMO OFF</b><span>привязка ЭБУ, pins и carpass, новые ключи</span></div>
+</div>
+
+<section class="sec grid-bg" id="dyno">
+  <div class="wrap">
+    <div class="sec__head">
+      <div><p class="kick">Стенд</p><h2 class="h2">Сколько добавит <em>ваша</em> прошивка</h2></div>
+      <p class="sec__note">Выберите мотор и этап — график покажет, как меняется мощность и момент. Цифры ориентировочные: точные значения видны после чтения прошивки и диагностики.</p>
+    </div>
+    <div class="dyno">
+      <div class="dyno__chart"><svg id="dynoSvg" viewBox="0 0 720 380" role="img" aria-label="График мощности до и после прошивки"></svg></div>
+      <div class="dyno__panel">
+        <div><span class="grp__lbl">Двигатель</span>
+          <div class="chiprow" id="engines">
+            <button class="chip is-on" type="button" data-engine="na">Бензин, атмо</button>
+            <button class="chip" type="button" data-engine="turbo">Бензин, турбо</button>
+            <button class="chip" type="button" data-engine="diesel">Дизель</button>
+          </div>
+        </div>
+        <div><span class="grp__lbl">Объём, л</span>
+          <input class="rng" id="vol" type="range" min="1.2" max="3" step="0.1" value="2" aria-label="Объём двигателя, литры">
+          <div class="rng__val"><span>1.2</span><span id="volVal">2.0 л</span><span>3.0</span></div>
+        </div>
+        <div><span class="grp__lbl">Этап</span>
+          <div class="chiprow" id="stages">
+            <button class="chip is-on" type="button" data-stage="1">Stage 1</button>
+            <button class="chip" type="button" data-stage="2">Stage 2</button>
+          </div>
+        </div>
+        <div class="dyno__out">
+          <div class="dyno__cell"><span>Было</span><b id="outWas">—<i>л.с.</i></b></div>
+          <div class="dyno__cell dyno__cell--ph"><span>Стало</span><b id="outNow">—<i>л.с.</i></b></div>
+          <div class="dyno__cell dyno__cell--cy"><span>Прибавка</span><b id="outGain">—</b></div>
+        </div>
+        <p class="dyno__hint" id="outHint">—</p>
+        <a class="btn btn--ph" href="https://wa.me/+375291515658" target="_blank" rel="noopener">Узнать по моей машине</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec__head">
+      <div><p class="kick">Услуги</p><h2 class="h2">Что делаем <em>каждый день</em></h2></div>
+      <a class="btn btn--ghost" href="uslugi.html">Все услуги и детали</a>
+    </div>
+    <div class="cards">
+      <a class="card" href="uslugi.html#stage"><span class="card__tag">мощность</span><h3>Чип-тюнинг Stage 1</h3><p>Настройка топлива и наддува под ваш мотор и топливо. Без «прошивок из интернета»: калибровки правим сами и проверяем на тест-драйве.</p><span class="card__price">от 300 руб. <span>· по договору</span></span></a>
+      <a class="card" href="uslugi.html#stage"><span class="card__tag">мощность+</span><h3>Stage 2 под железо</h3><p>Когда есть выпуск, интеркулер или другая турбина. Считаем под конкретную конфигурацию, а не «средний» Stage 2.</p><span class="card__price">индивидуально</span></a>
+      <a class="card" href="uslugi.html#eco"><span class="card__tag">экология</span><h3>AdBlue, EGR, DPF, катализатор</h3><p>Программное отключение систем, которые ушли в ошибку. Мотор перестаёт уходить в аварийный режим и ограничение запуска.</p><span class="card__price">от 150 руб.</span></a>
+      <a class="card" href="uslugi.html#clone"><span class="card__tag">электроника</span><h3>Клонирование ЭБУ и BSI</h3><p>Родной блок вышел из строя? Переносим прошивку и данные в донора: машина остаётся «своей», без новой привязки.</p><span class="card__price">от 150 руб.</span></a>
+      <a class="card" href="uslugi.html#immo"><span class="card__tag">доступ</span><h3>IMMO OFF, pins, carpass</h3><p>Чтение пароля и логина, привязка ЭБУ к авто, новые ключи, отключение иммобилайзера для сервисных задач.</p><span class="card__price">по авто</span></a>
+      <a class="card" href="uslugi.html#errors"><span class="card__tag">прошивка</span><h3>Ошибки внутри прошивки</h3><p>Убираем не только ошибку на панели, а причину: правим структуру прошивки, вихревые заслонки, лямбда-контроль, ограничитель скорости.</p><span class="card__price">от 120 руб.</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec ceny" id="ceny">
+  <div class="wrap">
+    <div class="sec__head">
+      <div><p class="kick">Прайс</p><h2 class="h2">Цены без сюрпризов</h2></div>
+      <p class="sec__note">Фиксируем стоимость до начала работ. Новым клиентам скидка 10%. Выезд возможен по договорённости — уточняйте по телефону.</p>
+    </div>
+    <div class="tblwrap"><table class="tbl">
+      <caption>Прошивки и электроника</caption>
+      <tr><td>Чип-тюнинг Stage 1 (увеличение мощности)</td><td>от 300 руб.</td></tr>
+      <tr><td>Программное отключение AdBlue</td><td>от 180 руб.</td></tr>
+      <tr><td>Программное отключение клапана EGR</td><td>от 150 руб.</td></tr>
+      <tr><td>Удаление сажевого фильтра (программно)</td><td>от 160 руб.</td></tr>
+      <tr><td>Отключение контроля катализатора</td><td>от 150 руб.</td></tr>
+      <tr><td>Отключение вихревых заслонок</td><td>от 160 руб.</td></tr>
+      <tr><td>Клонирование блоков двигателя (ЭБУ)</td><td>от 150 руб.</td></tr>
+      <tr><td>Отключение ограничения скорости</td><td>от 120 руб.</td></tr>
+      <tr><td>Компьютерная диагностика</td><td>от 30 руб.</td></tr>
+    </table></div>
+    <div class="ceny__foot"><span>Полный прайс на ремонт и обслуживание — на отдельной странице.</span><a class="btn" href="ceny.html" style="border-color:#0A0D0F">Весь прайс</a></div>
+  </div>
+</section>
+
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head">
+      <div><p class="kick">Диагностика</p><h2 class="h2">Что <em>случилось</em> с машиной</h2></div>
+      <p class="sec__note">Выберите ситуацию — покажем, что делаем, сколько занимает и от какой суммы считаем.</p>
+    </div>
+    <div class="scen">
+      <div class="scen__list" id="scenList" role="tablist" aria-label="Ситуации"></div>
+      <div class="scen__body" id="scenBody"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec__head"><div><p class="kick">Порядок</p><h2 class="h2">Пять шагов <em>до результата</em></h2></div>
+      <p class="sec__note">Мы не отдаём машину, пока не проехали на ней сами. Расчёт — после того, как вы убедились в результате.</p></div>
+    <div class="steps">
+      <div class="step"><b>01</b><h3>Диагностика</h3><p>Читаем ошибки и параметры, проверяем железо. Иногда «прошивка» — это на самом деле датчик.</p></div>
+      <div class="step"><b>02</b><h3>Бэкап</h3><p>Сохраняем стоковую прошивку. В любой момент можно вернуть заводское состояние.</p></div>
+      <div class="step"><b>03</b><h3>Прошивка</h3><p>Правим калибровки под ваш мотор и топливо. Никаких универсальных файлов.</p></div>
+      <div class="step"><b>04</b><h3>Запись</h3><p>Пишем блок, делаем адаптации и стираем последствия старых ошибок.</p></div>
+      <div class="step"><b>05</b><h3>Тест-драйв</h3><p>Едем вместе с вами. Довольны результатом — считаем; не довольны — возвращаем сток.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head"><div><p class="kick">Изнутри</p><h2 class="h2">Как это выглядит</h2></div>
+    <p class="sec__note">Ноутбук, кабель и блок управления. Всё остальное — в прошивке.</p></div>
+    <div class="gal">
+      <figure><img src="assets/img/ecu.jpg" alt="Блок управления двигателем на столе с программатором" width="1100" height="800" loading="lazy"><figcaption>ЭБУ на столе · чтение и запись</figcaption></figure>
+      <figure><img src="assets/img/laptop.jpg" alt="Ноутбук с программой на двигателе" width="1100" height="800" loading="lazy"><figcaption>Калибровки</figcaption></figure>
+      <figure><img src="assets/img/obd.jpg" alt="Подключение ноутбука к разъёму OBD" width="1100" height="800" loading="lazy"><figcaption>Подключение</figcaption></figure>
+      <figure><img src="assets/img/dash.jpg" alt="Приборная панель и диагностический планшет" width="1050" height="780" loading="lazy"><figcaption>Проверка после записи</figcaption></figure>
+      <figure><img src="assets/img/hero.jpg" alt="Автомобиль на стенде" width="1600" height="940" loading="lazy"><figcaption>Стенд и тест-драйв</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec__head"><div><p class="kick">Вопросы</p><h2 class="h2">Спрашивают <em>часто</em></h2></div>
+      <a class="btn btn--ghost" href="tel:+375297137225">Есть свой вопрос? +375 (29) 713-72-25</a></div>
+    <div class="faq">
+      <details><summary>Чип-тюнинг безопасен для двигателя?</summary><p>Stage 1 делается в пределах, которые выдерживает штатное железо: меняются топливо, наддув и моменты, но без выхода за границы ресурса. Перед прошивкой мы смотрим параметры и состояние агрегатов: если турбина или сцепление уже на пределе, честно скажем, что сначала нужно починить.</p></details>
+      <details><summary>Что с законом и техосмотром после отключения экологии?</summary><p>Отключение AdBlue, EGR, сажевого и катализатора — это вмешательство в системы снижения токсичности. Владелец принимает решение сам, а мы до работ объясняем последствия: по техническому осмотру и экологическим требованиям могут быть вопросы. Наши работы по мощности и электронике к этому не относятся.</p></details>
+      <details><summary>Можно вернуть заводскую прошивку?</summary><p>Да. Перед любой записью сохраняем сток в архив: возврат в заводское состояние — это отдельная операция, делается по вашей просьбе.</p></details>
+      <details><summary>Что такое клонирование ЭБУ и когда оно нужно?</summary><p>Это перенос содержимого вашего блока в другой, исправный блок. Нужно, когда родной ЭБУ вышел из строя: залило, сгорел, повреждён. Клон сохраняет иммобилайзер, кодировки и конфигурацию, поэтому машина остаётся «своей» и не требует новой привязки ключей.</p></details>
+      <details><summary>Сколько времени занимает работа?</summary><p>Stage 1 — обычно в течение дня, при готовой прошивке быстрее. Клонирование и привязка зависят от блока: некоторые делаются за час, некоторые требуют разбора. Точный срок называем после диагностики.</p></details>
+      <details><summary>Есть выезд?</summary><p>Да, по договорённости. Для выезда нужен доступ к разъёму OBD и стабильное питание — уточняйте при записи, не все блоки шьются «в поле».</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap cta__in">
+    <div><h2>Приезжайте на диагностику — скажем честно, нужна ли прошивка</h2>
+    <p>Иногда достаточно починить датчик. Если нужен тюнинг — покажем, что реально получить на вашем моторе.</p></div>
+    <div class="cta__actions">
+      <a class="btn btn--dark" href="tel:+375291515658">+375 (29) 151-56-58</a>
+      <a class="btn" href="https://wa.me/+375291515658" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn" href="kontakty.html">Контакты и адрес</a>
+    </div>
+  </div>
+</section>
+<footer class="foot"><div class="wrap">
+<div class="foot__grid">
+<div><p class="foot__name">CHIP365 · чип-тюнинг и автоэлектроника</p>
+<p class="foot__small">Прошивки Stage 1–2, отключение AdBlue, EGR, DPF и катализатора, клонирование ЭБУ и BSI, IMMO OFF, привязка блоков. Минск, Минск, ул. Будславская, 21, бокс 1050. Работаем без выходных, 10:00–21:00.</p></div>
+<div class="foot__col"><h4>Разделы</h4><a href="uslugi.html">Услуги</a><a href="ceny.html">Цены</a><a href="raboty.html">Работы</a><a href="o-nas.html">О нас</a><a href="kontakty.html">Контакты</a></div>
+<div class="foot__col"><h4>Связь</h4><a href="tel:+375291515658">+375 (29) 151-56-58</a><a href="tel:+375297137225">+375 (29) 713-72-25</a><a href="mailto:info@chip365.by">info@chip365.by</a><a href="https://wa.me/+375291515658" target="_blank" rel="noopener">WhatsApp</a><a href="https://t.me/++375291515658" target="_blank" rel="noopener">Telegram</a><a href="viber://chat?number=%2B+375291515658">Viber</a></div>
+</div>
+<div class="foot__bottom"><span>© 2026 CHIP365 · Минск, ул. Будславская, 21, бокс 1050</span><span>Цены — от, точная сумма после диагностики. <a href="politika.html" style="color:inherit;border-bottom:1px solid currentColor">Политика данных</a></span></div>
+</div></footer>
+<div class="drawer" id="drawer" hidden><div class="drawer__in">
+<button class="drawer__close" type="button" id="drawer-close" aria-label="Закрыть меню">×</button>
+<nav aria-label="Мобильное меню"><a href="index.html">Главная</a><a href="uslugi.html">Услуги</a><a href="ceny.html">Цены</a><a href="raboty.html">Работы</a><a href="o-nas.html">О нас</a><a href="kontakty.html">Контакты</a></nav>
+<div class="drawer__meta"><a href="tel:+375291515658" style="color:inherit">+375 (29) 151-56-58</a><br><a href="tel:+375297137225" style="color:inherit">+375 (29) 713-72-25</a><br>Минск, ул. Будславская, 21, бокс 1050<br>10:00–21:00, без выходных</div>
+</div></div>
+<nav class="mobbar" aria-label="Быстрая связь">
+<a class="mobbar__call" href="tel:+375291515658">Позвонить</a>
+<a href="https://wa.me/+375291515658" target="_blank" rel="noopener">WhatsApp</a>
+<a href="viber://chat?number=%2B+375291515658">Viber</a>
+<a href="https://t.me/++375291515658" target="_blank" rel="noopener">Telegram</a>
+</nav>
+<script src="assets/js/main.v1.js"></script>
+</body></html>
